@@ -13,7 +13,7 @@ const Bloog = ({cart, handleAddnames}) => {
             <div className=' flex justify-center py-2'>
             <button 
             className=' bg-blue-500 py-2 px-10 rounded-lg'
-            onClick={() => handleAddnames(name, hours)}
+            onClick={() => handleAddnames(name, hours, price)}
             >Select</button>
             </div>
         </div>
