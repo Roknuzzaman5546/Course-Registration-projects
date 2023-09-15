@@ -39,7 +39,7 @@ function App() {
         names={names}
         credithour={credithour}
         remaininghour={remaininghour}
-        showprice={showprice}
+        showprice={showprice}  
         ></Addlist>
       </div>
       <ToastContainer />

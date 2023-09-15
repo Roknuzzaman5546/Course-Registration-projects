@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { FaBookOpen } from 'react-icons/fa';
 const Bloog = ({cart, handleAddnames}) => {
         const { name, title, cover, hours, price} = cart;
     return (
@@ -8,7 +9,12 @@ const Bloog = ({cart, handleAddnames}) => {
             <h3 className=' text-sm py-2'>{title}</h3>
             <div className='flex justify-between items-center'>
                 <p>$ Price: {price}</p>
-                <p> Credit: {hours}</p>
+                
+                <div className='flex items-center gap-1'>
+                    <FaBookOpen></FaBookOpen>
+                    <io5/>
+                   <p> Credit: {hours}</p>
+                </div>
             </div>
             <div className=' flex justify-center py-2'>
             <button 
