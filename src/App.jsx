@@ -22,9 +22,15 @@ function App() {
     if(setCredit <= 20){
     setcreditHour(setCredit);
     }
+    else{
+      toast('OR TOTAL CREADIT NOT ADD HERE');
+    }
     const newRemaining = remaininghour - hours;
     if(newRemaining >= 0){
       setRemainingHour(newRemaining);
+    }
+    else{
+      toast('OR REAMING CREDIT NO ADD HERE')
     }
     const newPrice = showprice + price;
     setshowPrice(newPrice); 
